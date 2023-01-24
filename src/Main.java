@@ -64,7 +64,7 @@ public class Main {
                     assists = input.nextInt();
                 }
 
-                input.nextLine(); //Program doesn't continue unless adding this part to clear scanner
+                input.nextLine(); //Program doesn't continue unless adding this part to clear scanner data
                 //Take all the data entered from above and create a player object, then add to teamList
                 Player player = new Player(playerName, goals, assists, teamList[i].getTeamName());
                 teamList[i].addPlayer(player);
