@@ -6,6 +6,6 @@ A report is then generated detailing the teams rating and all player stats.
 
 ***Not yet completed***
 -----------------------
-[ ] Team rating system
-[ ] Team stats report
-[ ] Player stats report
+Team rating system
+Team stats report
+Player stats report
