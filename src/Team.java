@@ -57,13 +57,13 @@ public class Team {
     //Logic needed in here to determine team rating
     protected String getTeamRating() {
         if (teamPoints > 20) {
-            teamRating = "***";
+            teamRating = "*** stars";
         } else if (teamPoints >= 10) {
-            teamRating = "**";
+            teamRating = "** stars";
         } else if (teamPoints > 0) {
-            teamRating = "*";
+            teamRating = "* stars";
         } else {
-            teamRating = "0";
+            teamRating = "0 stars";
         }
         return teamRating;
     }
