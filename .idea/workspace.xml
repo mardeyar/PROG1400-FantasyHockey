@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60849e93-ba57-403a-9df7-461f6b3b2f78" name="Changes" comment="Second commit" />
+    <list default="true" id="60849e93-ba57-403a-9df7-461f6b3b2f78" name="Changes" comment="Finished but needs better formatting and error handling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +46,13 @@
       <updated>1674582536479</updated>
       <workItem from="1674582537753" duration="2518000" />
       <workItem from="1674589963169" duration="1089000" />
-      <workItem from="1674591806340" duration="5447000" />
+      <workItem from="1674591806340" duration="6001000" />
+      <workItem from="1674667878889" duration="1809000" />
+      <workItem from="1674672118706" duration="33000" />
+      <workItem from="1674675008679" duration="4969000" />
+      <workItem from="1674757266917" duration="2137000" />
+      <workItem from="1674823025990" duration="599000" />
+      <workItem from="1675104329143" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1674597288567</created>
@@ -52,7 +61,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674597288567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Third commit. Need to add report generation">
+      <created>1674597386820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674597386820</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Third commit. Need to add report generation">
+      <created>1674597431349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674597431349</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed getTeamRating method output">
+      <created>1674757711909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674757711909</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finished but needs better formatting and error handling">
+      <created>1674758610149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674758610149</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,6 +108,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Third commit. Need to add report generation" />
+    <MESSAGE value="Changed getTeamRating method output" />
+    <MESSAGE value="Finished but needs better formatting and error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished but needs better formatting and error handling" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="j" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

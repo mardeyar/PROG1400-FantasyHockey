@@ -8,20 +8,16 @@ public class Main {
         //Variables for the main class
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#.##");
+        Team[] teamList = new Team[3]; //Array to store 3 team names
 
         //region "Program Introduction"
         System.out.println("\nFANTASY HOCKEY APPLICATION");
         System.out.println("TEAM ENTRY");
         System.out.println("================================");
-
-        System.out.print("How many teams are in this league?: ");
-        int amtOfTeams = input.nextInt();
-        Team[] teamList = new Team[amtOfTeams]; //Array to store the team names, user determines how many teams
-        input.nextLine(); //Clear scanner or else program errors out
         //endregion
 
         //region "Add Team names"
-        //Loop through the entry of team names. 3 team league = 3 loops.
+        //Loop through the entry of team names
         for (int i = 0; i < teamList.length; i++) {
             System.out.print("Enter name for team #" + (i+1) + ": ");
             String teamName = input.nextLine();
@@ -56,11 +52,13 @@ public class Main {
                 //Ask user to input goal totals, ensuring total is above 0
                 System.out.print("Enter number of goals for " + playerName + ": ");
                 int playerGoals = input.nextInt();
+
                 while (playerGoals < 0) {
                     System.out.println("Error: Goals must be zero or greater. Please try that again.");
                     System.out.print("Enter number of goals for " + playerName + ": ");
                     playerGoals = input.nextInt();
                 }
+
 
                 //Ask user to input assist totals, ensuring total is above 0
                 System.out.print("Enter number of assists for " + playerName + ": ");
@@ -70,6 +68,7 @@ public class Main {
                     System.out.print("Enter number of assists for " + playerName + ": ");
                     playerAssists = input.nextInt();
                 }
+                System.out.println(); //Line break for formatting
 
                 input.nextLine(); //Program doesn't continue unless adding this part to clear scanner data
                 //Take all the data entered from above and create a player object, then add to teamList
@@ -94,6 +93,7 @@ public class Main {
                     "Rating: " + teamList[i].getTeamRating());
             System.out.println();
         }
+        System.out.println(); //Line break for formatting
         //endregion
 
         //region "Player Stats REPORT"
@@ -103,7 +103,8 @@ public class Main {
         //Loop through our teamRoster arraylist to get data from above for each player
         for (int i = 0; i < teamList.length; i++) {
             ArrayList<Player> teamRoster = teamList[i].getTeamRoster();
-            System.out.println(teamList[i].getTeamName()); //Print the team name once, then players below
+            System.out.println("\n" + teamList[i].getTeamName()); //Print the team name once, then players below
+            System.out.println();
             for (int j = 0; j < teamList.length; j++) {
                 Player player = teamRoster.get(j);
                 System.out.printf("%-25s| %-8s| %-8s| %-12s", //Format our console output cleanly
@@ -112,6 +113,7 @@ public class Main {
                         "A: " + player.getPlayerAssists(),
                         "Total: " + player.getPlayerPoints()
                         );
+                System.out.println();
             }
         }
     }
